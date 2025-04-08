@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: inherit;
+    user-select: none;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+
+    /* overflow: hidden; */
+    background-image: url("/images/background.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.time-container {
+    margin: auto;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 300px;
+}
+
+.time-elem {
+    padding: 10px;
+    width: fit-content;
+    min-width: 200px;
+
+    color: #522408;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: .6;
+}
+
+.time-label {
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.time-value {
+    font-size: 8em;
+    font-weight: 700;
+    container-type: inline-size;
+}
+
+.input-container {
+    padding: 10px;
+
+    position: absolute;
+    left: calc(50% - 200px);
+    bottom: 50px;
+
+    display: grid;
+    grid-template-areas:
+        "input input input"
+        "btn1 . btn2";
+    gap: 10px;
+    
+    width: 400px;
+    height: 100px;
+}
+
+.countdown-btn {
+    padding: 10px 0;
+    font-size: 1.2em;
+    text-transform: uppercase;
+
+    color: #fff;
+    background-color: #522408;
+    opacity: .6;
+    
+    border: none;
+    border-radius: 10px;
+    
+    mix-blend-mode: multiply;
+}
+
+.input-field {
+    padding: 0 10px;
+
+    color: white;
+    background-color: #522408;
+    opacity: .6;
+
+    border: none;
+    border-radius: 10px;
+
+    mix-blend-mode: multiply;
+}
+
+::webkit-calendar-picker-indicator {
+    background-color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+#DateField {
+    grid-area: input;
+}
+
+#StartBtn {
+    grid-area: btn1;
+}
+
+#StopBtn {
+    grid-area: btn2;
+}

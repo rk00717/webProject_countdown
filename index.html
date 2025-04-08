@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown | rk00717 webApp</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="time-container">
+        <span class="time-elem">
+            <p class="time-label">Day</p>
+            <p class="time-value" id="Day">00</p>
+        </span>
+        <span class="time-elem">
+            <p class="time-label">Hour</p>
+            <p class="time-value" id="Hour">00</p>
+        </span>
+        <span class="time-elem">
+            <p class="time-label">Minute</p>
+            <p class="time-value" id="Minute">00</p>
+        </span>
+        <span class="time-elem">
+            <p class="time-label">Second</p>
+            <p class="time-value" id="Second">00</p>
+        </span>
+        <span class="time-elem">
+            <p class="time-label">Millisecond</p>
+            <p class="time-value" id="Millisecond">00</p>
+        </span>
+    </div>
+    <div class="input-container">
+        <input id="DateField" class="input-field" type="date" />
+        <button id="StartBtn" class="countdown-btn" onclick=start_countdown()>
+            Start
+        </button>
+        <button id="StopBtn" class="countdown-btn" onclick=stop_countdown()>
+            Stop
+        </button>
+    </div>
+</body>
+<script src="/js/script.js"></script>
+</html>
